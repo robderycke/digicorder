@@ -1,0 +1,67 @@
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background-color: #f8f9fc;
+  color: #2d3436;
+}
+
+.c-zender {
+  position: relative;
+  cursor: pointer;
+  background: white;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+.c-zender:hover {
+  border-color: #003049 !important;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(13, 110, 253, 0.1);
+}
+.c-zender__checkbox {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  accent-color: #003049;
+}
+.c-zender__media {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.c-zender__img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.c-zender:has(.js-zender-check:checked) {
+  border-color: #003049 !important;
+  background-color: rgba(0, 48, 73, 0.05);
+}
+.c-zender:has(.js-zender-check:disabled) {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #eee;
+}
+
+.c-fav-item {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background: rgba(0, 48, 73, 0.1);
+  color: #003049;
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.c-fav-item::before {
+  content: "Favoriet: ";
+  font-weight: 400;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-right: 0.4rem;
+}/*# sourceMappingURL=style.css.map */
