@@ -4,6 +4,35 @@ body {
   color: #2d3436;
 }
 
+.u-text-primary {
+  color: #003049 !important;
+}
+
+.c-button {
+  background-color: #003049;
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.c-button:hover:not(:disabled) {
+  background-color: rgb(0, 81.5342465753, 124);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 48, 73, 0.3);
+}
+.c-button:disabled {
+  background-color: #dfe6e9;
+  color: #b2bec3;
+  cursor: not-allowed;
+}
+.c-button--small {
+  padding: 0.5rem 1.5rem;
+  font-size: 0.9rem;
+}
+
 .c-zender {
   position: relative;
   cursor: pointer;
@@ -12,9 +41,9 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
 }
 .c-zender:hover {
-  border-color: #0d6efd !important;
+  border-color: #003049 !important;
   transform: translateY(-5px);
-  box-shadow: 0 12px 20px rgba(13, 110, 253, 0.1);
+  box-shadow: 0 12px 20px rgba(0, 48, 73, 0.1);
 }
 .c-zender__checkbox {
   position: absolute;
@@ -23,11 +52,11 @@ body {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  accent-color: #0d6efd;
+  accent-color: #003049;
 }
 .c-zender__media {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,20 +68,20 @@ body {
      object-fit: contain;
 }
 .c-zender:has(.js-zender-check:checked) {
-  border-color: #0d6efd !important;
-  background-color: rgba(13, 110, 253, 0.05);
+  border-color: #003049 !important;
+  background-color: rgba(0, 48, 73, 0.05);
 }
 .c-zender:has(.js-zender-check:disabled) {
   opacity: 0.5;
   cursor: not-allowed;
-  background-color: #eee;
+  background-color: #f1f2f6;
 }
 
 .c-fav-item {
   display: inline-block;
   padding: 0.4rem 1rem;
-  background: rgba(13, 110, 253, 0.1);
-  color: #0d6efd;
+  background: rgba(0, 48, 73, 0.1);
+  color: #003049;
   border-radius: 2rem;
   font-size: 0.85rem;
   font-weight: 600;

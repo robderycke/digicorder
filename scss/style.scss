@@ -1,5 +1,5 @@
 // #region *** SETTINGS ***
-$primary-color: #0d6efd;
+$primary-color: #003049;
 $secondary-color: #6c757d;
 $bg-light: #f8f9fc;
 $font-main: 'Inter', system-ui, -apple-system, sans-serif;
@@ -11,9 +11,41 @@ body {
     background-color: $bg-light;
     color: #2d3436;
 }
+
+.u-text-primary {
+    color: $primary-color !important;
+}
 // #endregion
 
 // #region *** COMPONENTS ***
+.c-button {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+    &:hover:not(:disabled) {
+        background-color: lighten($primary-color, 10%);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba($primary-color, 0.3);
+    }
+
+    &:disabled {
+        background-color: #dfe6e9;
+        color: #b2bec3;
+        cursor: not-allowed;
+    }
+
+    &--small {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
 .c-zender {
     position: relative;
     cursor: pointer;
@@ -24,7 +56,7 @@ body {
     &:hover {
         border-color: $primary-color !important;
         transform: translateY(-5px);
-        box-shadow: 0 12px 20px rgba(13, 110, 253, 0.1);
+        box-shadow: 0 12px 20px rgba($primary-color, 0.1);
     }
 
     &__checkbox {
@@ -38,8 +70,8 @@ body {
     }
 
     &__media {
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -61,7 +93,7 @@ body {
     &:has(.js-zender-check:disabled) {
         opacity: 0.5;
         cursor: not-allowed;
-        background-color: #eee;
+        background-color: #f1f2f6;
     }
 }
 
