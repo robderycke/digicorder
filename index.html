@@ -7,15 +7,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="scss/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
-    <script src="js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body class="c-app">
 
     <header class="c-header py-5">
         <div class="container text-center">
             <h1 class="c-header__title display-4 fw-bold">Mijn <span class="u-text-primary">Digicorder</span></h1>
-            <p class="lead text-muted">Kies je favoriete 3 zenders</p>
+            <p class="lead text-muted">Stel je persoonlijke top 3 zenders samen</p>
         </div>
     </header>
 
@@ -107,13 +107,13 @@
         <section class="c-selection p-4 bg-white shadow-lg rounded-4 border">
             <div class="row align-items-center">
                 <div class="col-md-6 mb-3 mb-md-0">
-                    <h3 class="h5 mb-1">Geselecteerd</h3>
-                    <p class="small text-muted mb-2"><span class="js-aantal-gekozen fw-bold u-text-primary">0</span> / 3 zenders</p>
+                    <h3 class="h5 mb-1">Jouw Favorieten</h3>
+                    <p class="small text-muted mb-2"><span class="js-aantal-gekozen fw-bold u-text-primary">0</span> / 3 gekozen</p>
                     <div class="js-mijn-favorietjes d-flex flex-wrap gap-2"></div>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <button class="c-button js-btn-save" disabled>
-                        Keuze Opslaan
+                        Selectie Opslaan
                     </button>
                 </div>
             </div>
@@ -124,7 +124,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content border-0 shadow-lg rounded-4">
                 <div class="modal-body text-center p-5">
-                    <h4 class="fw-bold mb-3 u-text-primary">Opgeslagen!</h4>
+                    <h4 class="fw-bold mb-3 u-text-primary">Bevestiging</h4>
                     <div class="js-modal-body text-muted mb-4"></div>
                     <button type="button" class="c-button c-button--small" data-bs-dismiss="modal">Sluiten</button>
                 </div>

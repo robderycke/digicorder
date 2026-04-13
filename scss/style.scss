@@ -2,12 +2,12 @@
 $primary-color: #003049;
 $secondary-color: #6c757d;
 $bg-light: #f8f9fc;
-$font-main: 'Inter', system-ui, -apple-system, sans-serif;
+$font-body: 'Inter', system-ui, -apple-system, sans-serif;
 // #endregion
 
 // #region *** ELEMENTS ***
 body {
-    font-family: $font-main;
+    font-family: $font-body;
     background-color: $bg-light;
     color: #2d3436;
 }
