@@ -24,7 +24,7 @@ HTML: Voor de structurele opbouw van de pagina.
 
 SCSS: Gestyled met een custom design-systeem (BEM-methodologie). Gebruik van CSS-variabelen en :has() selectors voor geavanceerde styling.
 
-JavaScript: "Vanilla" JavaScript voor de logica, DOM-manipulatie en event-handling.
+JavaScript: JavaScript voor de logica, DOM-manipulatie en event-handling.
 
 Bootstrap 5: Voor het grid-systeem, spacing utilities en de modal-component.
 
